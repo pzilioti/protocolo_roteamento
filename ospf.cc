@@ -150,7 +150,7 @@ int main (int argc, char **argv)
 
 	// o 7 eh o primeiro a enviar ao servidor 4
  	UdpEchoClientHelper echoClient7 (csma1.GetAddress (0), 9);
- 	echoClient7.SetAttribute ("MaxPackets", UintegerValue (2));
+ 	echoClient7.SetAttribute ("MaxPackets", UintegerValue (1));
  	echoClient7.SetAttribute ("Interval", TimeValue (Seconds (1)));
  	echoClient7.SetAttribute ("PacketSize", UintegerValue (1024));
 
@@ -160,7 +160,7 @@ int main (int argc, char **argv)
 
 	// o 8 eh o segundo cliente a enviar ao servidor 4
  	UdpEchoClientHelper echoClient8 (csma1.GetAddress (0), 9);
- 	echoClient8.SetAttribute ("MaxPackets", UintegerValue (2));
+ 	echoClient8.SetAttribute ("MaxPackets", UintegerValue (1));
  	echoClient8.SetAttribute ("Interval", TimeValue (Seconds (1)));
  	echoClient8.SetAttribute ("PacketSize", UintegerValue (1024));
 
@@ -170,7 +170,7 @@ int main (int argc, char **argv)
 
 	// o 20 eh o terceiro cliente a enviar ao servidor 4
  	UdpEchoClientHelper echoClient20 (csma1.GetAddress (0), 9);
- 	echoClient20.SetAttribute ("MaxPackets", UintegerValue (2));
+ 	echoClient20.SetAttribute ("MaxPackets", UintegerValue (1));
  	echoClient20.SetAttribute ("Interval", TimeValue (Seconds (1)));
  	echoClient20.SetAttribute ("PacketSize", UintegerValue (1024));
 
@@ -180,7 +180,7 @@ int main (int argc, char **argv)
 
 	// o 23 eh o quarto cliente a enviar ao servidor 4
  	UdpEchoClientHelper echoClient23 (csma1.GetAddress (0), 9);
- 	echoClient23.SetAttribute ("MaxPackets", UintegerValue (2));
+ 	echoClient23.SetAttribute ("MaxPackets", UintegerValue (1));
  	echoClient23.SetAttribute ("Interval", TimeValue (Seconds (1)));
  	echoClient23.SetAttribute ("PacketSize", UintegerValue (1024));
 
@@ -197,7 +197,7 @@ int main (int argc, char **argv)
 
 	// o 6 eh o primeiro a enviar ao servidor 14
  	UdpEchoClientHelper echoClient6 (csma3.GetAddress (0), 8);
- 	echoClient6.SetAttribute ("MaxPackets", UintegerValue (2));
+ 	echoClient6.SetAttribute ("MaxPackets", UintegerValue (1));
  	echoClient6.SetAttribute ("Interval", TimeValue (Seconds (1)));
  	echoClient6.SetAttribute ("PacketSize", UintegerValue (1024));
 
@@ -207,7 +207,7 @@ int main (int argc, char **argv)
 
 	// o 9 eh o primeiro a enviar ao servidor 14
  	UdpEchoClientHelper echoClient9 (csma3.GetAddress (0), 8);
- 	echoClient9.SetAttribute ("MaxPackets", UintegerValue (2));
+ 	echoClient9.SetAttribute ("MaxPackets", UintegerValue (1));
  	echoClient9.SetAttribute ("Interval", TimeValue (Seconds (1)));
  	echoClient9.SetAttribute ("PacketSize", UintegerValue (1024));
 
@@ -217,7 +217,7 @@ int main (int argc, char **argv)
 
 	// o 16 eh o primeiro a enviar ao servidor 14
  	UdpEchoClientHelper echoClient16 (csma3.GetAddress (0), 8);
- 	echoClient16.SetAttribute ("MaxPackets", UintegerValue (2));
+ 	echoClient16.SetAttribute ("MaxPackets", UintegerValue (1));
  	echoClient16.SetAttribute ("Interval", TimeValue (Seconds (1)));
  	echoClient16.SetAttribute ("PacketSize", UintegerValue (1024));
 
@@ -227,7 +227,7 @@ int main (int argc, char **argv)
 
 	// o 26 eh o segundo cliente a enviar ao servidor 14
  	UdpEchoClientHelper echoClient26 (csma3.GetAddress (0), 8);
- 	echoClient26.SetAttribute ("MaxPackets", UintegerValue (2));
+ 	echoClient26.SetAttribute ("MaxPackets", UintegerValue (1));
  	echoClient26.SetAttribute ("Interval", TimeValue (Seconds (1)));
  	echoClient26.SetAttribute ("PacketSize", UintegerValue (1024));
 
@@ -270,7 +270,7 @@ int main (int argc, char **argv)
 	anim.SetConstantPosition (csma4Nodes.Get (5), 4.0, 1.0);
 */
 
-        Simulator::Stop (Seconds (500.0));
+        Simulator::Stop (Seconds (1000.0));
   	Simulator::Run ();
   	Simulator::Destroy ();
 
